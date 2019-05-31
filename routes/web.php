@@ -27,29 +27,32 @@ Route::group(['middleware' => ['auth']], function () {
     
     Route::get('admindashboard','AdminController@dashboard');
     Route::get('admin/settings','AdminController@settings');
+
+
+    Route::get('/product',function(){
+
+        return view('admin.products.products');
+    
+    });
+    
+    Route::get('/order',function(){
+    
+        return view('admin.orders.orders');
+    
+    });
+    
+    Route::get('/category',function(){
+    
+        return view('admin.category.category');
+    
+    });
 });
 
 
-Route::get('/logout','AdminController@logout');
 
 
-Route::get('/product',function(){
 
-    return view('admin.products.products');
 
-});
-
-Route::get('/order',function(){
-
-    return view('admin.orders.orders');
-
-});
-
-Route::get('/category',function(){
-
-    return view('admin.category.category');
-
-});
 
 
 Route::get('/view', function () {
@@ -57,3 +60,5 @@ Route::get('/view', function () {
     return view('user.view.view');
     
 });
+
+Route::get('/logout','AdminController@logout');

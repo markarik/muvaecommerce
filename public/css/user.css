@@ -1,0 +1,60 @@
+body{
+    background-color:rgba(0, 0, 0, 0.1) !important;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links{
+    display: flex;
+}
+
+.nav-item {
+    font-size: 20px;
+    margin: 10px !important;
+    padding: 0 5px 0 0;
+}
+ .display_bar{
+    display: none;
+} 
+
+ @media only screen and (max-width: 768px){
+
+    .display_bar{
+        display: block;
+      
+    }
+    
+
+}
+
+
+
+@media only screen and (max-width:768px){
+    .display_bars{
+
+        display:none;
+      
+    }
+    
+    
+}
+
+/* cards */
+
+.column {
+    float: left !important;
+    width: 30% !important;
+    padding: 5px !important;
+    margin:20px 0 5px 20px;
+  }
+.icon-align{
+    position: fixed;
+    display: flex;
+    color: rgb(0, 128, 0,0.2);
+    height: 20px;
+    width: 50px;
+    transform: none;
+    padding-top: 100%;
+    bottom: 3.5rem;
+    right: 10pc;
+}

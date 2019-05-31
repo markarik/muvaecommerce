@@ -1,45 +1,108 @@
 @extends('user.layout.master')
 
 @section('title')
-    Welcome Laravel Blog Tutorial
+   E-commerce
 @endsection
 
 @section('content')
-    <main role="main" class="container"  style="margin-top: 5px">
+    <main role="main" class="container-fluid"  style="margin-top: 5px">
 
         <div class="row">
 
-            <div class="col-sm-8 blog-main">
+            <div class="col-sm-9 blog-main">
 
-                <div class="blog-post">
-                    <h2 class="blog-post-title">Posts One</h2>
-                    <p class="blog-post-meta"><small><i>December 23, 2013 by <a href="#">Jeremy</a></i></small></p>
+              
+                <div class="card column" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                 </div>
+                 <div class="card column" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                 </div>
+                 <div class="card column" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                 </div>
+                 <div class="card column" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                 </div>
+                 <div class="card column" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                 </div>
+                 <div class="card column" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                 </div>
+                 <div class="card column" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                 </div>
+                 <div class="card column" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                 </div>
+                 <div class="card column" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                 </div>
+                 <div class="card column" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                 </div>
 
-                    <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-                    <blockquote>
-                        <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong>
-                            ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula
-                            ut id elit... <a href="" class="btn btn-primary btn-sm">Learn more</a> </p>
-                    </blockquote>
-                </div><!-- /.blog-post -->
+                 
 
-                <div class="blog-post">
-                    <h2 class="blog-post-title">Post Two</h2>
-                    <p class="blog-post-meta"><small><i>December 14, 2013 by <a href="#">Evans</a></i></small></p>
+                 <i></i>
 
-                    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                        Aenean lacinia bibendum nulla sed consectetur. Etiam porta
-                        euismod. Fusce dapibus... <a href="" class="btn btn-primary btn-sm">Learn more</a> </p>
-                </div><!-- /.blog-post -->
-
-                <nav class="blog-pagination">
-                    <a class="btn btn-outline-primary" href="#">Older</a>
-                    <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
-                </nav>
+                 <a  class="fas fa-angle-up icon-align fa-7x" href="#"></a>
+                     
 
             </div><!-- /.blog-main -->
 
-            <aside class="col-sm-3 ml-sm-auto blog-sidebar">
+            <aside class="col-sm-2 ml-sm-auto blog-sidebar">
                 <div class="sidebar-module">
                     <h4>Latest Posts</h4>
                     <ol class="list-unstyled">
