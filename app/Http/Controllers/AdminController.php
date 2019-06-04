@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Auth;
 use Session;
+use App\User; 
+use Hash;
 
 class AdminController extends Controller
 {
@@ -38,5 +40,31 @@ class AdminController extends Controller
 
     public function settings(){
         return view('admin.settings');
+    }
+
+
+    public function updatepassword(Request $request){
+
+        if($request->isMethod('post')){
+            $data = $request->all();
+
+            // dd($    data);
+
+            $check_password= User::where(['email'=>Auth::User()->email])->first();
+            $current_password = $data['current_pwd'];
+
+            if(Hash::check($current_password, $check_password->password)){
+                $password=bcrypt($data['new_pwd']);
+
+                user::where('id','1')->update(['password'=>$password]);
+               // dd('$password');
+
+                return redirect('/admin/settings')->with('flash_message_success','Password updated successfully');
+            }else {
+               return redirect('/admin/settings')->with('flash_message_error','Password Not updated ');
+            }
+            
+        }
+
     }
 }

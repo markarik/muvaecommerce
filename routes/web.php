@@ -24,6 +24,8 @@ Route::match(['get','post'],'admin','AdminController@login');
 
 
 Route::group(['middleware' => ['auth']], function () {
+
+    Route::match(['get', 'post'], '/admin/update-pwd','AdminController@updatepassword');
     
     Route::get('admindashboard','AdminController@dashboard');
     Route::get('admin/settings','AdminController@settings');
